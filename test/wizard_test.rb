@@ -10,7 +10,6 @@ class WizardTest < Minitest::Test
   end
 
   def test_can_have_different_name
-    skip
     wizard = Wizard.new("Alex")
     assert_equal "Alex", wizard.name
   end
@@ -28,7 +27,6 @@ class WizardTest < Minitest::Test
   end
 
   def test_has_root_powers
-    skip
     wizard = Wizard.new("Sarah", bearded: false)
     assert_equal "sudo chown ~/bin", wizard.incantation("chown ~/bin")
   end
@@ -61,4 +59,3 @@ class WizardTest < Minitest::Test
   end
 
 end
-
